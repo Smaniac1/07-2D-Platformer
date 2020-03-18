@@ -10,6 +10,8 @@ var motion = Vector2()
 
 export(String, FILE, "*.tscn") var level_select
 
+func _ready():
+	$Camera2D/Score.update_score(0)
 
 
 func _physics_process(delta):
@@ -51,12 +53,24 @@ func _physics_process(delta):
 	
 func update_score(p):
 	$Camera2D/Score.update_score(p)
+	get_node("/root/Global").score = $Camera2D/Score.score
 	
-func _on_EnemyDetector_body_entered():
-	var bodies = $EnemyDetector.get_overlapping_bodies()
-	for body in bodies:
-		if body.name == "Enemy":
-				die()
+func _on_EnemyDetector_body_entered(body):
+	if body.name == "Enemy":
+		die()
 	
 func die():
 	get_tree().change_scene(level_select)
+
+
+func _on_StompArea_body_entered(body):
+	if body.name == "Enemy":
+		body.die()
+
+
+func _on_Save_pressed():
+	get_node("/root/Global").save_data()
+
+
+func _on_Load_pressed():
+	get_node("/root/Global").load_data()
