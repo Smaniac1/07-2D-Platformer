@@ -36,13 +36,14 @@ func _physics_process(delta):
 
 
 func _on_StompArea2D_area_entered():
-	var bodies = $StompArea2D.get_overlapping_bodies()
-	for body in bodies:
-		if body.name == "Player":
-			if Player.position.y < $StompArea2D/CollisionShape2D.position.y:
-				die()
-			elif Player.position.y - 1> $StompArea2D/CollisionShape2D.position.y:
-				Player.die()
+	pass
+	#var bodies = $StompArea2D.get_overlapping_bodies()
+	#for body in bodies:
+	#	if body.name == "Player":
+	#		if Player.position.y < $StompArea2D/CollisionShape2D.position.y:
+	#			die()
+	#		elif Player.position.y - 1> $StompArea2D/CollisionShape2D.position.y:
+	#			Player.die()
 
 
 func die() -> void:
