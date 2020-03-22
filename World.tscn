@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://LevelEnd.tscn" type="PackedScene" id=2]
@@ -6,12 +6,13 @@
 [ext_resource path="res://Coin.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Enemy.tscn" type="PackedScene" id=5]
 [ext_resource path="res://World.gd" type="Script" id=6]
+[ext_resource path="res://Chomp_Globo.tscn" type="PackedScene" id=7]
 
 [node name="World" type="Node2D"]
 script = ExtResource( 6 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 80, 96 )
+position = Vector2( 96, 16 )
 z_index = 1
 level_select = "res://World.tscn"
 
@@ -344,7 +345,96 @@ position = Vector2( 1248, -352 )
 [node name="Coin103" parent="Coins" instance=ExtResource( 4 )]
 position = Vector2( 1184, -192 )
 
-[node name="Enemies" type="Node" parent="."]
+[node name="Baisc_Enemies" type="Node" parent="."]
 
-[node name="Enemy" parent="Enemies" instance=ExtResource( 5 )]
-position = Vector2( 160, 64 )
+[node name="Enemy" parent="Baisc_Enemies" instance=ExtResource( 5 )]
+position = Vector2( 384, 80 )
+
+[node name="Enemy2" parent="Baisc_Enemies" instance=ExtResource( 5 )]
+position = Vector2( 704, 208 )
+
+[node name="Enemy3" parent="Baisc_Enemies" instance=ExtResource( 5 )]
+position = Vector2( 1280, 208 )
+
+[node name="Enemy4" parent="Baisc_Enemies" instance=ExtResource( 5 )]
+position = Vector2( 1248, 112 )
+
+[node name="Enemy5" parent="Baisc_Enemies" instance=ExtResource( 5 )]
+position = Vector2( 1216, 16 )
+
+[node name="Enemy6" parent="Baisc_Enemies" instance=ExtResource( 5 )]
+position = Vector2( 1088, 384 )
+
+[node name="Enemy7" parent="Baisc_Enemies" instance=ExtResource( 5 )]
+position = Vector2( 1344, 384 )
+
+[node name="Enemy8" parent="Baisc_Enemies" instance=ExtResource( 5 )]
+position = Vector2( 1216, 384 )
+
+[node name="Enemy9" parent="Baisc_Enemies" instance=ExtResource( 5 )]
+position = Vector2( 1936, 384 )
+
+[node name="Enemy10" parent="Baisc_Enemies" instance=ExtResource( 5 )]
+position = Vector2( 1840, 384 )
+
+[node name="Enemy11" parent="Baisc_Enemies" instance=ExtResource( 5 )]
+position = Vector2( 1760, 384 )
+
+[node name="Enemy12" parent="Baisc_Enemies" instance=ExtResource( 5 )]
+position = Vector2( 2272, 208 )
+
+[node name="Enemy14" parent="Baisc_Enemies" instance=ExtResource( 5 )]
+position = Vector2( 2176, 208 )
+
+[node name="Enemy15" parent="Baisc_Enemies" instance=ExtResource( 5 )]
+position = Vector2( 2080, 208 )
+
+[node name="Enemy13" parent="Baisc_Enemies" instance=ExtResource( 5 )]
+position = Vector2( 1968, 304 )
+
+[node name="Enemy16" parent="Baisc_Enemies" instance=ExtResource( 5 )]
+position = Vector2( 2048, 304 )
+
+[node name="Enemy17" parent="Baisc_Enemies" instance=ExtResource( 5 )]
+position = Vector2( 1888, -176 )
+
+[node name="Enemy18" parent="Baisc_Enemies" instance=ExtResource( 5 )]
+position = Vector2( 1978, -176 )
+
+[node name="Enemy19" parent="Baisc_Enemies" instance=ExtResource( 5 )]
+position = Vector2( 1500, -400 )
+
+[node name="Chomp_Globos" type="Node" parent="."]
+
+[node name="Chomp_Globo" parent="Chomp_Globos" instance=ExtResource( 7 )]
+position = Vector2( 1520, 336 )
+
+[node name="Chomp_Globo2" parent="Chomp_Globos" instance=ExtResource( 7 )]
+position = Vector2( 1584, 272 )
+
+[node name="Chomp_Globo4" parent="Chomp_Globos" instance=ExtResource( 7 )]
+position = Vector2( 1744, -272 )
+
+[node name="Chomp_Globo5" parent="Chomp_Globos" instance=ExtResource( 7 )]
+position = Vector2( 1696, -304 )
+
+[node name="Chomp_Globo6" parent="Chomp_Globos" instance=ExtResource( 7 )]
+position = Vector2( 1296, -304 )
+
+[node name="Chomp_Globo7" parent="Chomp_Globos" instance=ExtResource( 7 )]
+position = Vector2( 1104, -80 )
+
+[node name="Chomp_Globo8" parent="Chomp_Globos" instance=ExtResource( 7 )]
+position = Vector2( 1168, 208 )
+
+[node name="Chomp_Globo10" parent="Chomp_Globos" instance=ExtResource( 7 )]
+position = Vector2( 1360, 112 )
+
+[node name="Chomp_Globo11" parent="Chomp_Globos" instance=ExtResource( 7 )]
+position = Vector2( 1296, 21 )
+
+[node name="Chomp_Globo12" parent="Chomp_Globos" instance=ExtResource( 7 )]
+position = Vector2( 1168, 111 )
+
+[node name="Chomp_Globo13" parent="Chomp_Globos" instance=ExtResource( 7 )]
+position = Vector2( 1168, 21 )

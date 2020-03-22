@@ -5,6 +5,7 @@ const GRAVITY = 20
 const MAX_SPEED = 200
 const ACCELERATION = 50
 const JUMP_HEIGHT = -500
+const BOUNCE_HEIGHT = -650
 
 var motion = Vector2()
 
@@ -58,14 +59,28 @@ func update_score(p):
 func _on_EnemyDetector_body_entered(body):
 	if body.name == "Enemy":
 		die()
-	
+	if body.name == "Chomp_Globo":
+		die()
+	for i in range(1,101):
+		if body.name == "Enemy" + str(i):
+			die()
+		if body.name == "Chomp_Globo" + str(i):
+			die()
+
 func die():
+	$Camera2D/Score.score = 0
+	get_node("/root/Global").score = $Camera2D/Score.score
 	get_tree().change_scene(level_select)
 
 
 func _on_StompArea_body_entered(body):
 	if body.name == "Enemy":
 		body.die()
+		motion.y = BOUNCE_HEIGHT
+	for i in range(1,201):
+		if body.name == "Enemy" + str(i):
+			body.die()
+			motion.y = BOUNCE_HEIGHT
 
 
 func _on_Save_pressed():

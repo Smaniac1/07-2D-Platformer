@@ -18,6 +18,11 @@ animations = [ {
 "name": "Fall",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 2 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 7 ) ],
 "loop": true,
 "name": "Jump",
@@ -27,20 +32,15 @@ animations = [ {
 "loop": true,
 "name": "Run",
 "speed": 15.0
-}, {
-"frames": [ ExtResource( 2 ) ],
-"loop": true,
-"name": "Idle",
-"speed": 5.0
 } ]
 
 [sub_resource type="CircleShape2D" id=2]
 
-[sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 12.953, 10.2256 )
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 10, 8 )
 
 [sub_resource type="RectangleShape2D" id=4]
-extents = Vector2( 10, 8.03323 )
+extents = Vector2( 10, 7 )
 
 [node name="Player" type="KinematicBody2D"]
 script = ExtResource( 10 )
@@ -51,6 +51,7 @@ animation = "Idle"
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, -1 )
 shape = SubResource( 2 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
@@ -90,8 +91,8 @@ __meta__ = {
 [node name="EnemyDetector" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="EnemyDetector"]
-position = Vector2( 0, -3 )
-shape = SubResource( 3 )
+position = Vector2( 0, -1 )
+shape = SubResource( 5 )
 __meta__ = {
 "_edit_group_": true
 }
