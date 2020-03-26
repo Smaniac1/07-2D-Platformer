@@ -9,7 +9,7 @@
 [ext_resource path="res://Enemy.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Chomp_Globo.tscn" type="PackedScene" id=8]
 
-[node name="World2" type="Node"]
+[node name="World2" type="Node2D"]
 script = ExtResource( 6 )
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -41,7 +41,7 @@ move_to = Vector2( 400, 0 )
 position = Vector2( 2752, 416 )
 move_to = Vector2( 100, -400 )
 
-[node name="Coins" type="Node" parent="."]
+[node name="Coins" type="Node2D" parent="."]
 
 [node name="Coin" parent="Coins" instance=ExtResource( 5 )]
 position = Vector2( 112, 96 )
@@ -133,7 +133,7 @@ position = Vector2( 2784, 352 )
 [node name="Coin30" parent="Coins" instance=ExtResource( 5 )]
 position = Vector2( 2720, 352 )
 
-[node name="Basic_Enemies" type="Node" parent="."]
+[node name="Basic_Enemies" type="Node2D" parent="."]
 
 [node name="Enemy" parent="Basic_Enemies" instance=ExtResource( 7 )]
 position = Vector2( 320, 336 )
@@ -162,7 +162,7 @@ position = Vector2( 2192, 368 )
 [node name="Enemy9" parent="Basic_Enemies" instance=ExtResource( 7 )]
 position = Vector2( 1888, 432 )
 
-[node name="Chomp_Globos" type="Node" parent="."]
+[node name="Chomp_Globos" type="Node2D" parent="."]
 
 [node name="Chomp_Globo" parent="Chomp_Globos" instance=ExtResource( 8 )]
 position = Vector2( 2736, 416 )

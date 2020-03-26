@@ -21,13 +21,14 @@ animations = [ {
 
 [sub_resource type="CircleShape2D" id=2]
 
-[node name="Coin" type="Area2D"]
+[node name="Coin" type="Area2D" groups=[
+"Coins",
+]]
 script = ExtResource( 10 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 1 )
 animation = "Idle"
-frame = 7
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
