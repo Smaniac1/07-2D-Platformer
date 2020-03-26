@@ -1,2 +1,3 @@
-# Project-Template-Godot
-A default Godot project template for MSCH-C220
+Golobos Adventure:
+
+Welcome to Globos Adventure, a game were you play as are blue hero Globo in an attempt to save his friends who have been turned evil. Only two levels are done as of this README so the game infinitly loops. You can jump and move while going through the two levels and interacting with the two enemy types Evil Globos (also known as the Basic Enemy) and Chomp Globos, Evil Globos are you normal platformer enemy, if you run into them you die and if you jump on them you kill them. Chomp Globos do not move but are invincible so watch out!. Grabing coins, killing enemies and ending the level all give score, which is just there so you can go for as much as possible. This game has no life system so your reward for score is just to make the number go up. Dieing resets your score, so if you want a high score, do not die. 

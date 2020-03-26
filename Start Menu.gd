@@ -12,4 +12,5 @@ func _on_StartGame_pressed():
 
 
 func _on_LoadGame_pressed():
+	get_node("/root/Global").load_data()
 	pass

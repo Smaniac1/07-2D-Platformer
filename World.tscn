@@ -416,7 +416,7 @@ position = Vector2( 1584, 272 )
 position = Vector2( 1744, -272 )
 
 [node name="Chomp_Globo5" parent="Chomp_Globos" instance=ExtResource( 7 )]
-position = Vector2( 1696, -304 )
+position = Vector2( 1616, -336 )
 
 [node name="Chomp_Globo6" parent="Chomp_Globos" instance=ExtResource( 7 )]
 position = Vector2( 1296, -304 )

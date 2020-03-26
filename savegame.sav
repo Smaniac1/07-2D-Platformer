@@ -1,9 +1,9 @@
 [Save]
 
-score=180
+score=0
 level=1
-coin_count=91
-enemy_count=17
+coin_count=103
+enemy_count=19
 
 [Save_Coin]
 
@@ -17,38 +17,38 @@ Coin7=true
 Coin8=true
 Coin9=true
 Coin10=true
-Coin11=false
-Coin12=false
+Coin11=true
+Coin12=true
 Coin13=true
 Coin14=true
 Coin15=true
 Coin16=true
 Coin17=true
-Coin18=false
-Coin19=false
+Coin18=true
+Coin19=true
 Coin20=true
-Coin21=false
-Coin22=false
+Coin21=true
+Coin22=true
 Coin23=true
 Coin24=true
 Coin25=true
 Coin26=true
 Coin27=true
-Coin28=false
+Coin28=true
 Coin29=true
 Coin30=true
 Coin31=true
-Coin32=false
-Coin33=false
-Coin34=false
+Coin32=true
+Coin33=true
+Coin34=true
 Coin35=true
 Coin36=true
 Coin37=true
 Coin38=true
 Coin39=true
 Coin40=true
-Coin41=false
-Coin42=false
+Coin41=true
+Coin42=true
 Coin43=true
 Coin44=true
 Coin45=true
@@ -113,13 +113,13 @@ Coin103=true
 
 [Save_Enemy]
 
-Enemy=false
+Enemy=true
 Enemy2=true
 Enemy3=true
 Enemy4=true
 Enemy5=true
 Enemy6=true
-Enemy7=false
+Enemy7=true
 Enemy8=true
 Enemy9=true
 Enemy10=true

@@ -18,7 +18,6 @@ func _ready():
 func _physics_process(delta):
 	motion.y += GRAVITY
 	var friction = false
-	
 	if Input.is_action_pressed("ui_right"):
 		motion.x = min(motion.x + ACCELERATION, MAX_SPEED)
 		$Sprite.flip_h = false
@@ -43,6 +42,7 @@ func _physics_process(delta):
 			$Sprite.play("Fall")
 		if friction == true:
 			motion.x = lerp(motion.x, 0, .05)
+			
 	var snap = Vector2.DOWN
 	
 	motion = move_and_slide_with_snap(motion, snap, UP)
