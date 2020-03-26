@@ -345,63 +345,63 @@ position = Vector2( 1248, -352 )
 [node name="Coin103" parent="Coins" instance=ExtResource( 4 )]
 position = Vector2( 1184, -192 )
 
-[node name="Baisc_Enemies" type="Node" parent="."]
+[node name="Basic_Enemies" type="Node" parent="."]
 
-[node name="Enemy" parent="Baisc_Enemies" instance=ExtResource( 5 )]
+[node name="Enemy" parent="Basic_Enemies" instance=ExtResource( 5 )]
 position = Vector2( 384, 80 )
 
-[node name="Enemy2" parent="Baisc_Enemies" instance=ExtResource( 5 )]
+[node name="Enemy2" parent="Basic_Enemies" instance=ExtResource( 5 )]
 position = Vector2( 704, 208 )
 
-[node name="Enemy3" parent="Baisc_Enemies" instance=ExtResource( 5 )]
+[node name="Enemy3" parent="Basic_Enemies" instance=ExtResource( 5 )]
 position = Vector2( 1280, 208 )
 
-[node name="Enemy4" parent="Baisc_Enemies" instance=ExtResource( 5 )]
+[node name="Enemy4" parent="Basic_Enemies" instance=ExtResource( 5 )]
 position = Vector2( 1248, 112 )
 
-[node name="Enemy5" parent="Baisc_Enemies" instance=ExtResource( 5 )]
+[node name="Enemy5" parent="Basic_Enemies" instance=ExtResource( 5 )]
 position = Vector2( 1216, 16 )
 
-[node name="Enemy6" parent="Baisc_Enemies" instance=ExtResource( 5 )]
+[node name="Enemy6" parent="Basic_Enemies" instance=ExtResource( 5 )]
 position = Vector2( 1088, 384 )
 
-[node name="Enemy7" parent="Baisc_Enemies" instance=ExtResource( 5 )]
+[node name="Enemy7" parent="Basic_Enemies" instance=ExtResource( 5 )]
 position = Vector2( 1344, 384 )
 
-[node name="Enemy8" parent="Baisc_Enemies" instance=ExtResource( 5 )]
+[node name="Enemy8" parent="Basic_Enemies" instance=ExtResource( 5 )]
 position = Vector2( 1216, 384 )
 
-[node name="Enemy9" parent="Baisc_Enemies" instance=ExtResource( 5 )]
+[node name="Enemy9" parent="Basic_Enemies" instance=ExtResource( 5 )]
 position = Vector2( 1936, 384 )
 
-[node name="Enemy10" parent="Baisc_Enemies" instance=ExtResource( 5 )]
+[node name="Enemy10" parent="Basic_Enemies" instance=ExtResource( 5 )]
 position = Vector2( 1840, 384 )
 
-[node name="Enemy11" parent="Baisc_Enemies" instance=ExtResource( 5 )]
+[node name="Enemy11" parent="Basic_Enemies" instance=ExtResource( 5 )]
 position = Vector2( 1760, 384 )
 
-[node name="Enemy12" parent="Baisc_Enemies" instance=ExtResource( 5 )]
+[node name="Enemy12" parent="Basic_Enemies" instance=ExtResource( 5 )]
 position = Vector2( 2272, 208 )
 
-[node name="Enemy14" parent="Baisc_Enemies" instance=ExtResource( 5 )]
+[node name="Enemy14" parent="Basic_Enemies" instance=ExtResource( 5 )]
 position = Vector2( 2176, 208 )
 
-[node name="Enemy15" parent="Baisc_Enemies" instance=ExtResource( 5 )]
+[node name="Enemy15" parent="Basic_Enemies" instance=ExtResource( 5 )]
 position = Vector2( 2080, 208 )
 
-[node name="Enemy13" parent="Baisc_Enemies" instance=ExtResource( 5 )]
+[node name="Enemy13" parent="Basic_Enemies" instance=ExtResource( 5 )]
 position = Vector2( 1968, 304 )
 
-[node name="Enemy16" parent="Baisc_Enemies" instance=ExtResource( 5 )]
+[node name="Enemy16" parent="Basic_Enemies" instance=ExtResource( 5 )]
 position = Vector2( 2048, 304 )
 
-[node name="Enemy17" parent="Baisc_Enemies" instance=ExtResource( 5 )]
+[node name="Enemy17" parent="Basic_Enemies" instance=ExtResource( 5 )]
 position = Vector2( 1888, -176 )
 
-[node name="Enemy18" parent="Baisc_Enemies" instance=ExtResource( 5 )]
+[node name="Enemy18" parent="Basic_Enemies" instance=ExtResource( 5 )]
 position = Vector2( 1978, -176 )
 
-[node name="Enemy19" parent="Baisc_Enemies" instance=ExtResource( 5 )]
+[node name="Enemy19" parent="Basic_Enemies" instance=ExtResource( 5 )]
 position = Vector2( 1500, -400 )
 
 [node name="Chomp_Globos" type="Node" parent="."]
